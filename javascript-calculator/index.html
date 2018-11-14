@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"/>
+    <link rel="icon" href="favicon.png"/>
+    <meta name="description" content="Simple calculator I made for a school project using the latest HTML and JS tech"/>
+    <link rel="stylesheet" href="style.css"/>
+    
+</head>
+<body>
+
+<main id="calculator">
+    <header id="display">
+        <p id="statusBar">Calculator</p>
+        <h1 id="mainNumber">
+        </h1>
+        <p id="memoryNumber">
+            0
+        </p>
+        <p id="previousNumber"></p>
+        <p id="currentOperation"></p>
+    </header>
+    <div class="button-rows">
+        <div class="button-row">
+            <button data-type="memory">MR</button>
+            <button data-type="memory">M+</button>
+            <button data-type="memory">M-</button>
+            <button data-type="memory">MC</button>
+            <button data-type="screen">AC</button>
+        </div>
+        <div class="button-row">
+            <button data-type="number">7</button>
+            <button data-type="number">8</button>
+            <button data-type="number">9</button>
+            <button data-type="function">+</button>
+            <button data-type="function">-</button>
+        </div>
+        <div class="button-row">
+            <button data-type="number">4</button>
+            <button data-type="number">5</button>
+            <button data-type="number">6</button>
+            <button data-type="function">/</button>
+            <button data-type="function">*</button>
+        </div>
+        <div class="button-row">
+            <button data-type="number">1</button>
+            <button data-type="number">2</button>
+            <button data-type="number">3</button>
+            <button data-type="function">^</button>
+            <button data-type="function">√</button>
+        </div>
+        <div class="button-row">
+            <button data-type="number">0</button>
+            <button data-type="number">00</button>
+            <button data-type="number">.</button>
+            <button data-type="screen">+/-</button>
+            <button data-type="calculate">=</button>
+        </div>
+    </div>
+    <footer>
+        <a href="https://www.linkedin.com/in/myo-lwin-a29a8a116/" target="_blank" class="btn-linkdin"><i class="fa fa-linkedin-square"></i></a>
+    </footer>
+</main>
+<footer id="footer">
+    Created by <a href="https://github.com/RestartNetwork/rsonesummer18myo" target="_blank">@Myo Lwin</a>
+</footer>
+<script src="https://use.fontawesome.com/5efbd0500d.js" async></script>
+<script src="lib/Display.js"></script>
+<script src="lib/Memory.js"></script>
+<script src="lib/Error.js"></script>
+<script src="calculator.js"></script>
+</body>
+</html>
